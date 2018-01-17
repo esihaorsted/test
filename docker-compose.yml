@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis:
+    image: redis:3
+
+  add-a-tron:
+    image: add-a-tron
+    ports:
+      - "12101:8080"
