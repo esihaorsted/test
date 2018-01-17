@@ -18,7 +18,7 @@ class add:
         redis.incr('additions')
         a = int(web.input()['A'])
         b = int(web.input()['B'])
-        return "{0} * {1} = {2}".format(a, b, (a*b))
+        return "{0} + {1} = {2}".format(a, b, (a+b))
 
 
 class stats:
